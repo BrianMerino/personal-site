@@ -7,7 +7,7 @@
   
   body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #fdf6f0;
+    background-color: #f2e3d5;
     color: #3e2c20;
     line-height: 1.6;
     padding: 2rem;
@@ -16,9 +16,10 @@
   header {
     text-align: center;
     padding: 4rem 1rem;
-    background-color: #f2e3d5;
+    background-color: #fff7ee;
     border-radius: 10px;
-    margin-bottom: 3rem;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
   }
   
   header h1 {
@@ -77,8 +78,8 @@
   }
 
   .screenshot {
-    max-width: 300px;  /* Adjust this to control size */
-    width: 100%;       /* So it’s responsive */
+    max-width: 300px; 
+    width: 100%;       
     height: auto;
     margin: 10px 0;
     border-radius: 10px;
@@ -87,4 +88,57 @@
 
   .project {
     margin-bottom: 30px;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+  }
+  
+  .image-gallery img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .header-inline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* this is the fix */
+    padding: 20px 0;
+    flex-wrap: wrap;
+  }
+  
+  .header-inline h1,
+.header-inline p {
+  margin: 0;
+  line-height: 1.2;
+}
+  
+  .header-inline h1 {
+    font-size: 28px;
+    font-weight: bold;
+    flex: 1;
+    text-align: left;
+  }
+  
+  .header-inline p:nth-of-type(1) {
+    font-size: 18px;
+    flex: 1;
+    text-align: center;
+  }
+  
+  .header-inline p:nth-of-type(2) {
+    font-size: 18px;
+    flex: 1;
+    text-align: right;
   }
