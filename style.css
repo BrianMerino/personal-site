@@ -60,4 +60,19 @@
     font-size: 0.9rem;
     color: #7a5a44;
   }
+
+  .project-line {
+    display: flex;
+    justify-content: space-between; /* or flex-start for no spacing */
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .project-line h3 {
+    margin: 0;
+  }
+  .project-line p {
+    margin: 0;
+    font-size: small;
+  }
   
