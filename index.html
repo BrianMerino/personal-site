@@ -12,16 +12,24 @@
 </head>
 <body>
     <div class="container">
-      <header>
-        <div class="header-inline">
-          <img src="images/face_logo.png" alt="Avatar" class="avatar" />
-          <div class="header-text">
+
+      <nav class="navbar">
+        <div class="navbar-left">
+          <img src="images/face_logo.png" alt="Avatar" class="nav-avatar" />
+          <div class="nav-info">
             <h1>Brian Merino</h1>
-            <p>University of Tennessee Knoxville</p>
-            <p>Computer science student</p>
+            <p>University of Tennessee, Knoxville</p>
+            <p>Computer Science Student</p>
           </div>
         </div>
-      </header>
+      
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
       
       <section id="about" class="fade-in">
         <h2>About Me</h2>
@@ -41,6 +49,7 @@
             <h3>Exerkin</h3>
             <p>(React Native, Firestore, Realm, Expo)</p>
         </div>
+        <hr>
         <p>Group project. A social workout tracker app where users can log workouts, share progress, and connect with friends. Currently, the social aspect of the project is under construction.
           The purpose of this project is to encourage users to stay consistent with their workouts, as well as
           to keep up with the progress of friends. We are aiming to get onto the app store within 2025.
@@ -60,6 +69,7 @@
           <a href="https://github.com/BrianMerino/LabyrinthianLegends" target="_blank">GitHub</a>
             <p>(C#, Unity)</p>
         </div>
+        <hr>
       <p>Group project. For this project, my team and I created a maze-type RPG. It includes a main character
         and enemies. The enemies were created to use the A* search algorithm to chases enemies, even around objects.
         We were able to learn how to move characters, as well as animating sprites. It was great to work with a game engine and to learn how games are made.
