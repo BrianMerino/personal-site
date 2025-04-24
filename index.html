@@ -56,11 +56,21 @@
         </p>
 
         <div class="image-gallery">
-            <img src="images/homePage.png" alt="Screenshot 1" />
-            <img src="images/startWorkout.png" alt="Screenshot 2" />
-            <img src="images/activeWorkout.png" alt="Screenshot 3" />
-            <img src="images/workoutHistory.png" alt="Screenshot 4" />
+          <img src="images/homePage.png" alt="Screenshot 1" class="clickable-image" />
+          <img src="images/startWorkout.png" alt="Screenshot 2" class="clickable-image" />
+          <img src="images/activeWorkout.png" alt="Screenshot 3" class="clickable-image" />
+          <img src="images/workoutHistory.png" alt="Screenshot 4" class="clickable-image" />
+        </div>
+
+        <div id="imageModal" class="image-modal">
+          <span class="close-btn" id="closeModal">&times;</span>
+          <span class="nav-arrow left" id="prevImg">&#10094;</span>
+          <div class="modal-content">
+            <img id="modalImg" src="" alt="Preview" />
           </div>
+          <span class="nav-arrow right" id="nextImg">&#10095;</span>
+        </div>
+        
     </div>
   
     <div class="project">
