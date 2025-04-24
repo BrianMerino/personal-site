@@ -185,3 +185,45 @@ footer {
   font-size: 0.9rem;
   color: #7a5a44;
 }
+
+@media (max-width: 768px) {
+  .header-inline {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .header-text {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .header-text h1,
+  .header-text p {
+    flex: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  .avatar {
+    width: 100px;
+    height: 100px;
+  }
+
+  .contact-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .contact-links {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .image-gallery {
+    justify-content: center;
+  }
+}
