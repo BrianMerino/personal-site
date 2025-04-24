@@ -187,38 +187,49 @@ footer {
 }
 
 @media (max-width: 768px) {
+  .container {
+    padding: 10px 12px;
+  }
+
+  section {
+    padding: 1rem;
+  }
+
   .header-inline {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
 
-  .header-text {
-    display: flex;
-    flex: 1;
-    justify-content: space-between;
-    align-items: center; /* <-- Make sure this is CENTER */
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-  
-  .header-text h1,
-  .header-text p {
-    margin: 0;
-    line-height: 1.4;
-    font-size: 18px;
-    flex: 1;
-  }
-
-  .header-text p:last-of-type {
-    text-align: right;
-    line-height: 1.4;
-    padding-top: 2px; /* Nudge it down slightly to align */
-  }
-
   .avatar {
     width: 100px;
     height: 100px;
+    margin-bottom: 10px;
+  }
+
+  .header-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .header-text h1,
+  .header-text p {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .header-text h1 {
+    font-size: 24px;
+  }
+
+  .header-text p:last-of-type {
+    padding-top: 0;
   }
 
   .contact-row {
@@ -234,28 +245,5 @@ footer {
 
   .image-gallery {
     justify-content: center;
-  }
-}
-
-@media (max-width: 768px) {
-  .container {
-    padding: 10px 16px; /* less side padding, more usable width */
-  }
-}
-
-@media (max-width: 768px) {
-  section {
-    padding: 1.2rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .container {
-    padding-left: 12px;
-    padding-right: 12px;
-  }
-
-  section {
-    padding: 1rem; /* Less internal padding */
   }
 }
