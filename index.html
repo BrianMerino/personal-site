@@ -22,14 +22,25 @@
             <p>Computer Science Student</p>
           </div>
         </div>
-      
-        <ul class="nav-links">
+
+        <ul class="nav-links" id="navLinks">
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
 
+
+      <!-- <header>
+        <div class="header-inline">
+          <img src="images/face_logo.png" alt="Avatar" class="avatar" />
+          <div class="header-text">
+            <h1>Brian Merino</h1>
+            <p>University of Tennessee Knoxville</p>
+            <p>Computer science student</p>
+          </div>
+        </div>
+      </header> -->
       
       <section id="about" class="fade-in">
         <h2>About Me</h2>
@@ -56,21 +67,11 @@
         </p>
 
         <div class="image-gallery">
-          <img src="images/homePage.png" alt="Screenshot 1" class="clickable-image" />
-          <img src="images/startWorkout.png" alt="Screenshot 2" class="clickable-image" />
-          <img src="images/activeWorkout.png" alt="Screenshot 3" class="clickable-image" />
-          <img src="images/workoutHistory.png" alt="Screenshot 4" class="clickable-image" />
-        </div>
-
-        <div id="imageModal" class="image-modal">
-          <span class="close-btn" id="closeModal">&times;</span>
-          <span class="nav-arrow left" id="prevImg">&#10094;</span>
-          <div class="modal-content">
-            <img id="modalImg" src="" alt="Preview" />
+            <img src="images/homePage.png" alt="Screenshot 1" />
+            <img src="images/startWorkout.png" alt="Screenshot 2" />
+            <img src="images/activeWorkout.png" alt="Screenshot 3" />
+            <img src="images/workoutHistory.png" alt="Screenshot 4" />
           </div>
-          <span class="nav-arrow right" id="nextImg">&#10095;</span>
-        </div>
-        
     </div>
   
     <div class="project">
@@ -131,5 +132,16 @@
   <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </div>
+
+<!-- Modal HTML -->
+<div id="imageModal" class="image-modal">
+  <span id="closeModal" class="close-btn">&times;</span>
+  <span id="prevImg" class="nav-arrow left">&#10094;</span>
+  <div class="modal-content">
+    <img id="modalImg" src="" alt="Modal Preview" />
+  </div>
+  <span id="nextImg" class="nav-arrow right">&#10095;</span>
+</div>
+
 </body>
 </html>
