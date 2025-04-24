@@ -176,9 +176,15 @@ section a:hover {
 }
 
 .contact-links a {
+  color: #8B4513; /* example: a rich brown tone */
   text-decoration: none;
-  color: #333;
-  font-weight: 500;
+  margin-right: 20px;
+  transition: color 0.2s ease;
+}
+
+.contact-links a:hover {
+  color: #A0522D; /* lighter brown on hover */
+  text-decoration: underline;
 }
 
 footer {
