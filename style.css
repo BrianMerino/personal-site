@@ -227,3 +227,15 @@ footer {
     justify-content: center;
   }
 }
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px 16px; /* less side padding, more usable width */
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 1.2rem;
+  }
+}
