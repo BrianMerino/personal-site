@@ -460,3 +460,37 @@ body.modal-open {
   position: fixed;
   width: 100%;
 }
+
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.about-photo {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  object-position: center top;
+  will-change: transform;
+  transform: translateZ(0);
+  image-rendering: high-quality;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (max-width: 600px) {
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    .about-photo {
+      width: 220px;
+      height: 220px;
+    }
+  }
+}
