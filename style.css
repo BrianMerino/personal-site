@@ -480,6 +480,23 @@ body.modal-open {
   image-rendering: high-quality;
   -webkit-font-smoothing: antialiased;
 }
+.about-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.about-name {
+  font-size: 1.6rem;
+  color: #8B4513;
+  margin: 0;
+}
+
+.about-title {
+  font-size: 0.9rem;
+  color: #7a5a44;
+  margin: 0;
+}
 
 @media (max-width: 600px) {
   .about-content {
